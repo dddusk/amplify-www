@@ -173,3 +173,9 @@
 {"name":"Log","hostname":"Elis-MBP-2.lan","pid":16173,"level":30,"msg":"Url configured as: http://localhost:2368/","time":"2019-06-27T18:59:06.156Z","v":0}
 {"name":"Log","hostname":"Elis-MBP-2.lan","pid":16173,"level":30,"msg":"Ctrl+C to shut down","time":"2019-06-27T18:59:06.157Z","v":0}
 {"name":"Log","hostname":"Elis-MBP-2.lan","pid":16173,"level":30,"msg":"Ghost boot 4.771s","time":"2019-06-27T18:59:06.161Z","v":0}
+{"name":"Log","hostname":"Elis-MBP-2.lan","pid":16173,"level":40,"msg":"Ghost has shut down","time":"2019-06-27T19:48:35.337Z","v":0}
+{"name":"Log","hostname":"elis-mbp-2.lan","pid":16582,"level":30,"msg":"Ghost is running in development...","time":"2019-06-27T19:48:47.260Z","v":0}
+{"name":"Log","hostname":"elis-mbp-2.lan","pid":16582,"level":30,"msg":"Listening on: 127.0.0.1:2368","time":"2019-06-27T19:48:47.261Z","v":0}
+{"name":"Log","hostname":"elis-mbp-2.lan","pid":16582,"level":30,"msg":"Url configured as: http://localhost:2368/","time":"2019-06-27T19:48:47.262Z","v":0}
+{"name":"Log","hostname":"elis-mbp-2.lan","pid":16582,"level":30,"msg":"Ctrl+C to shut down","time":"2019-06-27T19:48:47.262Z","v":0}
+{"name":"Log","hostname":"elis-mbp-2.lan","pid":16582,"level":30,"msg":"Ghost boot 3.596s","time":"2019-06-27T19:48:47.264Z","v":0}
