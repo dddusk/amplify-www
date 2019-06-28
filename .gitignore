@@ -1,2 +1,4 @@
 ghost/.ghostpid
 ghost/content/logs/**/*
+ghost/content/themes/amplify-theme/node_modules/**/*
+ghost/content/themes/amplify-theme/assets/built/**/*
