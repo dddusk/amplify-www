@@ -116,6 +116,10 @@ body {
     background-size: initial;
 }
 
+.tag-in-the-news .site-header {
+    background: var(--blue);
+}
+
 .site-header:before {
     content: "";
     position: absolute;
@@ -415,7 +419,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-image-link {
-    background: var(--orange);
+    background: var(--blue);
     position: relative;
     display: block;
     overflow: hidden;
@@ -559,7 +563,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .static-avatar {
-    background: var(--blue);
+    background: var(--orange);
     display: block;
     overflow: hidden;
     margin: 0 -5px;
@@ -748,7 +752,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-image {
     margin: 0 -10vw -165px;
-    background: var(--orange) center center;
+    /*background: var(--orange) center center;*/
     border-radius: 5px;
     overflow: hidden;
 }
@@ -1521,28 +1525,30 @@ Usage (In Ghost editor):
     max-width: 840px;
 }
 
-.post-newsletter-signup {
-  background: var(--orange);
+#mc_embed_signup {
+  background: var(--blue) !important;
   color: white;
   border-radius: 10px;
+}
+
+#mc_embed_signup .email {
+    background: var(--blue) !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 999px !important;
 }
 
 .subscribe-button {
     display: block;
     padding: 9px 16px;
-    border: color(var(--midgrey) l(+20%)) 1px solid;
-    color: var(--midgrey);
     font-size: 1.2rem;
     line-height: 1;
     font-weight: 500;
-    border-radius: 20px;
-    transition: all ease 0.2s;
-}
-
-.subscribe-button:hover {
-    border-color: var(--blue);
-    color: var(--blue);
-    text-decoration: none;
+    margin: 0 0 1em 0 !important;
+    background: var(--orange) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 999px !important;
 }
 
 /* 7.4. Related posts
