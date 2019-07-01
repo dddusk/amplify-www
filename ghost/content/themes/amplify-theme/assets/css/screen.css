@@ -120,36 +120,6 @@ body {
     background: var(--blue);
 }
 
-.site-header:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    display: block;
-    background: rgba(0,0,0,0.18);
-}
-
-.site-header:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    z-index: 10;
-    display: block;
-    height: 80px;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
-}
-
-.site-header.no-image:before,
-.site-header.no-image:after {
-    display: none;
-}
-
 .site-header-content {
     display: flex;
     flex-direction: column;
@@ -171,6 +141,7 @@ body {
 
 .site-logo {
     max-height: 45px;
+    max-width: 85vw;
 }
 
 .site-description {
@@ -193,8 +164,14 @@ body {
         font-size: 3rem;
     }
     .site-description {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .home-template .site-header {
+    background-size: contain;
+  }
 }
 
 
@@ -251,6 +228,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 1em;
     font-weight: bold;
     letter-spacing: -0.5px;
+    overflow: hidden;
+    width: 25px;
+}
+
+body:not(.home-template) .site-nav-logo {
+    background: url("https://maliapowers.ghost.io/content/images/2019/07/inverse-logomark.png") no-repeat left center;
+    background-size: 25px auto;
 }
 
 .site-nav-logo:hover {
@@ -259,8 +243,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
-    width: auto;
+    width: 154px;
     height: 21px;
+    max-width: 154px;
+}
+
+body:not(.home-template) .site-nav-logo img {
+  opacity: 0;
 }
 
 .nav {
@@ -478,9 +467,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0 25px 25px;
 }
 
-.post-card-image-link img,
+.post-card-image-link:not(.unfiltered-img) img,
 .static-avatar img,
-.post-full-image img {
+body:not(.post-template) .post-full-image img {
     -webkit-filter: grayscale(100%) brightness(170%);
     filter: grayscale(100%) brightness(130%);
     -webkit-mix-blend-mode: soft-light;
@@ -680,8 +669,22 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
+.home-template .site-header {
+  background-color: #4D2B00;
+}
+
+.home-template .site-logo {
+
+}
+
 .home-template .site-header:after {
     display: none;
+}
+
+@media (max-width: 500px) {
+  .home-template .site-header-content {
+    padding: 20vw 6vw 25vw 4vw;
+  }
 }
 
 
