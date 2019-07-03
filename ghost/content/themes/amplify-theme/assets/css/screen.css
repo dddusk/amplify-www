@@ -92,7 +92,6 @@ body {
 
 @media (min-width: 900px) {
     .home-template .post-feed,
-    .tag-template .post-feed,
     .author-template .post-feed {
         margin-top: -70px;
         padding-top: 0;
@@ -111,13 +110,8 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
-    background: var(--orange) no-repeat bottom center;
+    color: var(--darkgrey);
     background-size: initial;
-}
-
-.tag-in-the-news .site-header {
-    background: var(--blue);
 }
 
 .site-header-content {
@@ -146,9 +140,9 @@ body {
 
 .site-description {
     z-index: 10;
-    margin: 0;
+    margin: 5px 0 0 0;
     padding: 5px 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 2rem;
     letter-spacing: 0.5px;
@@ -232,11 +226,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     width: 25px;
 }
 
-body:not(.home-template) .site-nav-logo {
-    background: url("https://maliapowers.ghost.io/content/images/2019/07/inverse-logomark.png") no-repeat left center;
-    background-size: 25px auto;
-}
-
 .site-nav-logo:hover {
     text-decoration: none;
 }
@@ -246,10 +235,6 @@ body:not(.home-template) .site-nav-logo {
     width: 154px;
     height: 21px;
     max-width: 154px;
-}
-
-body:not(.home-template) .site-nav-logo img {
-  opacity: 0;
 }
 
 .nav {
@@ -270,8 +255,14 @@ body:not(.home-template) .site-nav-logo img {
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: var(--darkgrey);
     opacity: 0.8;
+    position: relative;
+}
+
+.nav li.active a {
+  color: var(--orange);
+  font-weight: bold;
 }
 
 .nav li a:hover {
@@ -312,7 +303,7 @@ body:not(.home-template) .site-nav-logo img {
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: var(--darkgrey);
 }
 
 .social-link-fb svg {
@@ -324,7 +315,7 @@ body:not(.home-template) .site-nav-logo img {
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: var(--darkgrey);
 }
 
 .social-link-rss svg {
@@ -358,7 +349,7 @@ body:not(.home-template) .site-nav-logo img {
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: var(--darkgrey);
 }
 
 @media (max-width: 700px) {
@@ -387,6 +378,10 @@ body:not(.home-template) .site-nav-logo img {
     padding: 40px 0 0 0;
 }
 
+.tag-template .post-feed {
+  padding: 0;
+}
+
 .post-card {
     flex: 1 1 300px;
     display: flex;
@@ -408,7 +403,6 @@ body:not(.home-template) .site-nav-logo img {
 }
 
 .post-card-image-link {
-    background: var(--blue);
     position: relative;
     display: block;
     overflow: hidden;
@@ -465,15 +459,6 @@ body:not(.home-template) .site-nav-logo img {
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 25px 25px;
-}
-
-.post-card-image-link:not(.unfiltered-img) img,
-.static-avatar img,
-body:not(.post-template) .post-full-image img {
-    -webkit-filter: grayscale(100%) brightness(170%);
-    filter: grayscale(100%) brightness(130%);
-    -webkit-mix-blend-mode: soft-light;
-    mix-blend-mode: soft-light;
 }
 
 .out-link {
@@ -552,7 +537,6 @@ body:not(.post-template) .post-full-image img {
 }
 
 .static-avatar {
-    background: var(--orange);
     display: block;
     overflow: hidden;
     margin: 0 -5px;
@@ -669,14 +653,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
-.home-template .site-header {
-  background-color: #4D2B00;
-}
-
-.home-template .site-logo {
-
-}
-
 .home-template .site-header:after {
     display: none;
 }
@@ -755,7 +731,6 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-image {
     margin: 0 -10vw -165px;
-    /*background: var(--orange) center center;*/
     border-radius: 5px;
     overflow: hidden;
 }
@@ -2289,7 +2264,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    background: var(--blue);
+    background: var(--darkgrey);
 }
 
 .site-footer-content {
