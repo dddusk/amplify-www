@@ -472,6 +472,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: white;
 }
 
+.out-link.with-img {
+  padding-bottom: 16px;
+}
+
 .author-profile-image,
 .avatar-wrapper {
     display: block;
