@@ -459,16 +459,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0 25px 25px;
 }
 
-.out-link {
+.out-link:not(.with-img) {
     background: var(--orange);
 }
 
-.out-link .post-card-tags {
+.out-link:not(.with-img) .post-card-tags {
     color: white;
     color: rgba(255,255,255,0.4);
 }
 
-.out-link h2 {
+.out-link:not(.with-img) h2 {
     color: white;
 }
 
