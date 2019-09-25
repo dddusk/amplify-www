@@ -23,6 +23,7 @@ production stylesheet in assets/built/screen.css
 9.  Error Template
 10. Subscribe Overlay
 11. Site Footer
+12. Misc Styles
 */
 
 
@@ -31,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: #ffffff;
 }
 
 .img {
@@ -2321,4 +2322,12 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+
+/* 12. Misc Styles
+/* ---------------------------------------------------------- */
+
+.post-template .read-next .post-card.tag-in-the-news {
+  display: none;
 }
